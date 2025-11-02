@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Assets/css/main.css">
+</head>
+<body>
+    <div class="wrap"> 
+    <header>
+        <div class="header-left"> 
+           <img src="Assets/svg/bing.svg" alt="Bing Logo">
+           <div class="divider hide-mobile"></div>
+           <a href="#" class="home hide-mobile">Home</a>
+        </div>
+        <nav>
+            <a href="#" class="menu-open hide-desktop">
+                <img src="Assets/svg/menu.svg" alt="Open menu">
+            </a>
+            <ul>
+                <li class="hide-desktop">
+                     <a href="#" class="menu-close">
+                        <img src="Assets/svg/close.svg" alt="Close menu">
+                    </a>
+                </li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Billy the goat</h1>
+        <h2>Software Developer</h2>
+        <p class="subhead">Enthusiastic problem solver with extreme thirst to make a difference in the tech ecosystem. Specialization on cloud computing providing software as a service. </p>
+        <a href="#" class="primary-cta">Talk to us</a>
+    </main>
+
+    <div class="developer-container">
+        <div class="developer">
+            <img src="Assets/svg/undraw_developer-avatar_f6ac.svg" alt="developer illustration">
+            <div class="outer-cycle"></div>
+        </div>
+    </div>
+    <script>
+        const menu = document.querySelector(`nav ul`);
+        const menuBtn = document.querySelector(`.menu-open`);
+        const closeBtn = document.querySelector(`.menu-close`);
+
+        menuBtn.addEventListener(`click`,() => {
+            menu.classList.add(`open`)
+        })
+        closeBtn.addEventListener(`click`,() => {
+            menu.classList.remove(`open`)
+        })
+    </script>
+</body>
+</html>
