@@ -1,0 +1,101 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #edf2fa;
+  color: #2b2d40;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2b2d40;
+}
+
+header p {
+  margin-top: 0.5rem;
+  color: rgba(43, 45, 64, 0.8);
+}
+
+/* Main Section */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+.experience-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Experience Cards */
+.experience-card {
+  background-color: #fff;
+  border: 1px solid rgba(43, 45, 64, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(43, 45, 64, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(43, 45, 64, 0.2);
+}
+
+.experience-card h2 {
+  font-size: 1.4rem;
+  color: #2b2d40;
+  margin-bottom: 0.3rem;
+}
+
+.experience-card h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(43, 45, 64, 0.8);
+  margin-bottom: 0.3rem;
+}
+
+.experience-card .duration {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: rgba(43, 45, 64, 0.7);
+  margin-bottom: 1rem;
+}
+
+.experience-card p {
+  color: rgba(43, 45, 64, 0.9);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid rgba(43, 45, 64, 0.1);
+  font-size: 0.9rem;
+  color: #2b2d40;
+  opacity: 0.8;
+}

@@ -1,0 +1,66 @@
+/* General reset and font setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #2b2d40;
+  color: #edf2fa;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+.about-section {
+  max-width: 700px;
+  text-align: center;
+}
+
+.about-section h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #edf2fa;
+}
+
+.about-section p {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: #edf2fa;
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(237, 242, 250, 0.1);
+  color: #edf2fa;
+  opacity: 0.8;
+}

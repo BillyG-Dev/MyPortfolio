@@ -1,0 +1,102 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #edf2fa;
+  color: #2b2d40;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2b2d40;
+}
+
+header p {
+  margin-top: 0.5rem;
+  color: #2b2d40;
+  opacity: 0.8;
+}
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 4%;
+}
+
+/* Project cards */
+.project-card {
+  background-color: #fff;
+  border: 1px solid rgba(43, 45, 64, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(43, 45, 64, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(43, 45, 64, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card h2 {
+  font-size: 1.3rem;
+  margin: 1rem;
+  color: #2b2d40;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin: 0 1rem 1rem;
+  color: rgba(43, 45, 64, 0.8);
+}
+
+.project-link {
+  display: inline-block;
+  margin: 0 1rem 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #2b2d40;
+  color: #edf2fa;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.project-link:hover {
+  background-color: rgba(43, 45, 64, 0.85);
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid rgba(43, 45, 64, 0.1);
+  font-size: 0.9rem;
+  color: #2b2d40;
+  opacity: 0.8;
+}
